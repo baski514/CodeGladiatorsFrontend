@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  h4 {
+    @apply text-base;
+  }
+  h5 {
+    @apply text-sm;
+  }
+  h6 {
+    @apply text-xs;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Varela+Round&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Varela Round', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.slick-slider .slick-next:before {
+    content: url(../assets/next_arrow.png);
+    line-height: 0;
+    opacity: 1;
+}
+
+.slick-slider .slick-prev:before {
+    content: url(../assets/prev_arrow.png);
+    line-height: 0;
+    opacity: 1;
+}
+
+.theme-color {
+    color : #f47b57;
+}
+
+ol, ul {
+    list-style: unset !important;
+    margin: unset !important;
+    padding-left: 40px !important;
+}
+
+button, a {
+    cursor: pointer !important;
+}

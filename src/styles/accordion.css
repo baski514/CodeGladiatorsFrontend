@@ -1,0 +1,37 @@
+.faq__question {
+    width: 100%;
+    border-bottom: 1px solid #e7e7e9;
+}
+
+.faq__question-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.faq__question-button:after {
+    transition: transform .3s ease-out;
+}
+.faq__question-button:after {
+    content: url(../assets/accordion-arrow.svg);
+    margin-right: 17px;
+    transform: rotate(90deg);
+}
+
+.faq__desc {
+    padding-right: 17px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all .2s ease-out;
+}
+
+.faq__desc.show-description {
+    height: fit-content;
+    margin-bottom: 15px;
+}
